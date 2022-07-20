@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="w3.css">
+  <script type="text/javascript" src="index.js"></script>
+
+</head>
+
+<body>
+
+  <div id="navbar">
+    <a href="#default" id="logo"><img src="logo1.jpg"></a>
+    <div id="navbar-right">
+      <span class="menu" onclick="openNav()">&#9776;</span>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="contact.php" style="position:absolute;left:16%;top:10%">Contact</a>
+        <a href="about.html" style="position:absolute;left:20%;top:20%">About</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="hero">
+    <img style="background-size: cover;height: calc(100vh - 30px);width:100%;position: relative;opacity:0.9;" class="mySlides w3-animate-fading" src="road1.jpg">
+    <img style="background-size: cover;height: calc(100vh - 30px);width:100%;position: relative;opacity:0.9;" class="mySlides w3-animate-fading" src="road2.jpg">
+    <img style="background-size: cover;height: calc(100vh - 30px);width:100%;position: relative;opacity:0.9;" class="mySlides w3-animate-fading" src="road3.jpg">
+    <img style="background-size: cover;height: calc(100vh - 30px);width:100%;position: relative;opacity:0.9;" class="mySlides w3-animate-fading" src="road4.jpg">
+
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 9000);
+      }
+    </script>
+
+    <div class="hero-text">
+      <h1>SHREEPADA ROAD SAFETY SYSTEMS</h1>
+      <p>Thermoplastic Road Marking, Sign Boards, Crash Barriers and Traffic Items</p>
+    </div>
+  </div>
+
+  <div class="container1">
+    <h1 class="con1head">Welcome,</h1>
+    <h3 class="con1text">Your one stop destination to all your road marking and traffic related equipments is<br> SHREEPADA ROAD SAFETY SYSTEMS.</h3>
+  </div>
+
+  <div class="container">
+    <!--<div class="card">
+      <div class="face face1">
+        <div class="content">
+          <img src="design_128.png">
+          <h3>Projects</h3>
+        </div>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <p>We have done a lot of projects on different domains</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>-->
+    <div class="card" style="position:relative;left:15%;">
+      <div class="face face1">
+        <div class="content">
+          <img src="services_128.png">
+          <h3>Services</h3>
+        </div>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <p>We provide excellent services and we give out the bugdet economically</p>
+          <a href="services.html">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="position:relative;right:15%;">
+      <div class="face face1">
+        <div class="content">
+          <img src="gallery_128.png">
+          <h3>Gallery</h3>
+        </div>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <p>Photos of all the different projects undertaken by this company</p>
+          <a href="gallery.html">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      <i class="fa fa-heart"> Copyright 2019 &copy; All rights Reserved | Powered by SHREEPADA ROAD SAFETY SYSTEMS</i><br>
+    </p>
+  </footer>
+</body>
+
+</html>

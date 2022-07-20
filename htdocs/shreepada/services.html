@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Services</title>
+    <script>
+    window.addEventListener("load", function () {
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden"; // class "loader hidden"
+    });
+  </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/b805598c8f.js" crossorigin="anonymous"></script>
+<style>
+.home{
+  position:absolute;height:7vw;width:7vw;;left:90%;top:0%;
+}
+.loader {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader.hidden {
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 5;
+    visibility: hidden;
+  }
+}
+</style>
+  </head>
+  <body>
+    <div class="loader">
+      <img src="255.gif" />
+    </div>
+
+<div id="services" class="text-center">
+  <a href="index.html"><img class="home" src="home.png"></a>
+    <br>
+    <br>
+    <br>
+      <h1 class="mb-5 font-weight-bold text-warning" >OUR&thinsp;<span style="color: #00cec9">SERVICES</span></h1>
+       <div class="container">
+         <div class="row justify-content-center">
+           <div class="col-md-4">
+              <i><img src="cone.png"></i>
+              <h4 class="my-4 font-weight-bold"><i>We care for your safety</i></h4>
+              <p><i>We deliver you with the best kind of materials which are strong and lasts long which inturn brings safety</i></p>
+           </div>
+           <div class="col-md-4">
+              <i><img src="rd.png"</i>
+              <h4 class="my-4 font-weight-bold">Thermoplastic Road Marking</h4>
+              <p >We provide good work facilites using branded and latest materials in road marking.</p>
+            </div>
+         </div>
+       </div><br>
+       <div class="container">
+         <div class="row justify-content-center">
+           <div class="col-md-4">
+              <i><img src="lab.png"> </i>
+              <h4 class="my-4 font-weight-bold">Labour Support</h4>
+              <p>We provide the best and efficient workforce to finsih your work on time</p>
+           </div>
+           <div class="col-md-4">
+              <i><img src="i.png"</i>
+              <h4 class="my-4 font-weight-bold">Guide</h4>
+              <p >We provide guides to describe the complete information about the work we do and are always customer-friendly</p>
+            </div>
+         </div>
+       </div><br>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+               <i><img src="truck.png"> </i>
+               <h4 class="my-4 font-weight-bold">Material Supply</h4>
+               <p>The work we do is competed on time and any fragile materials we supply is taken at most care.</p>
+            </div>
+            <div class="col-md-4">
+               <i><img src="q.png"</i>
+               <h4 class="my-4 font-weight-bold">Quality Assured</h4>
+               <p >All the goods and services given from our company are certified and quality assured products.</p>
+             </div>
+          </div>
+         </div>
+    </body>
+  </html>
